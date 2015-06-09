@@ -10,5 +10,13 @@
 
 <%= yield %>
 
+
+<!-- place me in application.html.erb footer -->
+<% if Rails.env.development? %>
+		 <% console %>
+		 <%= debug(assigns) %>
+		 <%= debug(params) %>
+<%end%>
+
 </body>
 </html>
